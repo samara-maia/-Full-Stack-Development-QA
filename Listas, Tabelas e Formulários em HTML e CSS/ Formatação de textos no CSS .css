@@ -1,0 +1,23 @@
+*{
+    box-sizing: content-box;/* e o borde box*/
+
+    /* define o efeito de tdo o projeto/ conteudo */
+}
+
+.exemplo {
+    background-color: #0f0;
+    width: 400px;
+    height: 400px;
+}
+
+p{
+    color: #0f0;
+    font-size: 30px;/* tamanho do texto*/
+    font-weight: bold;/*texto em negrito*/
+    font-family: 'Courier New';/*troca o tipo da fonte*/
+    text-align: center;/*alinhamento do texto. tem tbm right, justify e left*/
+    text-transform: uppercase;/*transforma o texto em caixa alta*/
+    letter-spacing: normal;/*espaçamento entre uma letra e outra*/
+    line-height: normal;/*altura da liha*/
+    
+}
