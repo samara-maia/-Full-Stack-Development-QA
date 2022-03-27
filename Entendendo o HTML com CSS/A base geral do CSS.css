@@ -1,0 +1,31 @@
+#titulo{
+    color:aliceblue; /* seleciona o ID do HTML*/
+}
+
+.texto{
+    color: aliceblue;/* seleina a class do HTML*/
+}
+
+Nome_do_elemento{
+
+}
+
+#ID_do_Elemento{
+
+}
+.Classe_do_elemento{
+
+}
+elemento, outroelemento{
+
+}
+
+elemento elemento {
+
+}
+
+/*- Element/Type selector ‘h1, h2, p, div
+- ID selector ‘#box, #container’
+- Class selector ‘.red, .m-4
+- Attribute selector, pseudo-class, pseudo-element, e outros
+- as tags tem uma hierarquia */

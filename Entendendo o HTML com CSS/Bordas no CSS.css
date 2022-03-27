@@ -1,0 +1,28 @@
+
+p{
+    border: 5px solid #00f;
+    border-bottom: #00f;/* parte de baixo*/
+    border-top: #00f;/* parte de cima*/
+    border-left: #00f;/* partde da esquerda*/
+    border-right: #00f;/* parte da direita*/
+
+           /*tamanho  tipo e cor */
+           /*
+           outros tipos de bordas
+
+           dotted = pontilhada
+           dashed = trasinhos
+           double = traços
+           groove = o mesmo do solid
+
+           */
+}
+
+/* borda arredondada
+e também cria-se um quadrado com as divs */
+div {
+background-color: bisque;
+width: 200px;
+height: 200px;
+border-radius:100px;
+}

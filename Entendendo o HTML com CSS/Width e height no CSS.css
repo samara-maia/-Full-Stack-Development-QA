@@ -1,0 +1,11 @@
+*{
+    box-sizing: content-box;/* e o borde box*/
+
+    /* define o efeito de tdo o projeto/ conteudo */
+}
+
+.exemplo {
+    background-color: #0f0;
+    width: 400px;
+    height: 400px;
+}
