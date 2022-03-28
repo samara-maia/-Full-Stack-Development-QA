@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, 
+  BlinkMacSystemFont, "Segoe UI",  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    background: #f46b1b;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+  
+.title {
+    color: white;
+    font-size: 6rem;
+}
+  
+.subtitle {
+
+    color: #2A0A12;
+    font-size: 2rem;
+
+}
+
+.image-destaque {
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 15px;
+    border-radius: 10px;
+
+ }
+
+.image-destaque > .image-caption {
+
+    background: #ffff;
+    display: flex-end;
+    justify-content: right;
+    color: #fff;
+    border: 1px solid #ccc;
+}
+
+.card {
+
+    display: flexbox;
+    justify-content: center;
+    background: white;
+}
+
+.card-person {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-right: 60px;
+    padding: 15px;
+    border-radius: 1000px;
+    width: 400px;
+    height: 400px;
+    text-shadow: 1px 5px;
+
+}
+  
+.card-biograph {
+
+    width: 60%;
+    height: 300px;
+    margin-top: 16px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 25px;
+
+}
+  
+.text-biograph {
+    color: black;
+    border-radius: 5rem;
+  }
+  
+  .text-biograph > p {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  
+  .card-dbz-chars-align {
+    display: flex;
+  }
+
+/* The actual timeline (the vertical ruler) */
+#timeline-title {
+    font-size: 3rem;
+}
+
+.timeline {
+
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+  
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #ff9f55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    .timeline::after {
+      left: 33px;
+    }
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      font-size: 22px;
+    }
+    
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+    
+    .left::after,
+    .right::after {
+      left: 15px;
+    }
+    
+    .right {
+      left: 0%;
+    }
+ }
+  
+  #timeline-caption {
+    color: #0B0719;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 165px;
+  }
+  
