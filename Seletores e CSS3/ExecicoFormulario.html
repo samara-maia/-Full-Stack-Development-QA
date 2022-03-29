@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="css/list.css" />
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Perfil de usuário</h1>
+        <form action="" id="formulario">
+            <!--lista de campos-->
+            <ul>
+                <li class="fila">
+            <!--text-->        
+                <input type="text" id="nome"
+                name="fullname" maxlength="30" size="30"
+                placeholder="(nome)" required="requid"
+                autofocus="autofocus" />
+                
+                <label for="nome" class="propriedade">Nome</label>
+            <!--hidden-->
+            <input type="hidden" id="codigo" name="code" value="25" />   
+                </li> 
+
+            <!--password-->
+            <li class="fila">
+                <input type="password" id="password" name="password"
+                size="30" placeholder="senha" required="required" />
+                <label for="password" class="propiedade">senha</label>
+            </li>
+
+            <!--email-->
+            <li class="fila">
+                <input type="email" id="email" name="email"
+                maxlength="30" size="30" placeholder="(email)" />
+                <label for="email" class="propiedade">email</label>
+            </li>
+
+            <!-- tel-->
+
+            <li class="fila">
+                <input type="tel" id="telefone" name="phonenumber"
+                maxlength="9" size="11" placeholder="(telefone)" pattern="[0-9]{9}"/>
+                <label for="telefone" class="propiedade">Telefone</label>
+            </li>
+
+            <!--url-->
+
+            <li class="fila">
+                <input type="url" id="web" name="web"
+                maxlength="30" size="30" placeholder="(url)" value="https://"/>
+                <label for="web" class="propiedade">Web</label>
+            </li>
+
+            <!--date-->
+
+            <li class="fila">
+                <input type="date" id="ficha" name="birthedate"/>
+                <label for="ficha" class="propiedade">Data de Nascimento</label>
+            </li>
+            <!--readonly disabled-->
+
+            <li class="fila">
+                <input type="number" id="edad" name="age"
+                class="small" value="18" readonly="readonly"/>
+                <label for="edad" class="propiedade">Edad</label>
+            </li>
+            <!--number-->
+            <li class="fila">
+                <input type="number" id="irmaos" name="age"
+                class="small" min="1" max="50" value="1" />
+                <label for="irmaos" class="propiedade">N° de irmãos
+                </label>
+            </li>  
+            <!-- range -->
+        <li class="fila">
+            <input type="range" id="salario" name="earnings" min="600" max="2000" step="200" value="1000" list="valores-salario" onchange="document.querySelector('#salario-output').value = value;">
+            <label for="salario" class="propiedad">Salario</label>
+            <output for="salario" id="salario-output">1000</output>
+            <datalist id="valores-salario">
+              <option>600</option>
+              <option>800</option>
+              <option>1000</option>
+              <option>1200</option>
+              <option>1400</option>
+              <option>1600</option>
+              <option>1800</option>
+              <option>2000</option>
+            </datalist>
+          </li>
+          <!-- color -->
+          <li class="fila">
+            <input type="color" id="color" value="#FF0000" onchange="document.querySelector('#color-output').value = value;" />
+            <label for="color" class="propiedad">Color preferido</label>
+            <output for="color" id="color-output">#FF0000</output>
+          </li>
+          <!-- checkbox -->
+          <li class="fila">
+            <input type="checkbox" id="premium" name="premium" checked="checked" />
+            <label for="premium" class="propiedad">Usuario Premium</label>
+          </li>
+          <!-- radio -->
+          <li class="fila">
+            <input type="radio" id="homen" name="genre" value="homen" />
+            <label for="hombre" class="de-radio">Homem</label>
+            <input type="radio" id="Mulher" name="genre" value="mujer" checked="checked" />
+            <label for="Mulher" class="de-radio">Mulher</label>
+            <label for="genero" class="propiedad">Género</label>
+          </li>
+          <!-- meter -->
+          <li class="fila">
+            <meter id="experiencia" name="experience" value="24" min="0" max="100" low="25" medium="50" high="75" /></meter>
+            <label for="experiencia" class="propiedad">Nivel de experiencia</label>
+          </li>
+          <!-- progress -->
+          <li class="fila">
+            <progress id="formacion" name="training" value="75" min="0" max="100" /></progress>
+            <label for="formacion" class="propiedad">Nivel de formação</label>
+          </li>
+          <!-- select combo -->
+          <li class="fila">
+            <select id="estudios" name="studies" required="required">
+              <option value="">- Seleccione -</option>
+              <option value="eso">ESO</option>
+              <option value="bachillerato">Bachillerato</option>
+              <option value="cfgm">FP grado medio</option>
+              <option value="cfgs">FP grado superior</option>
+              <option value="grado">Grado universitario</option>
+              <option value="master">Master universitario</option>
+            </select>
+            <label for="estudios" class="propiedad">Nivel máximo de estudos</label>
+          </li>
+          <!-- select multiple -->
+          <li class="fila">
+            <select id="idiomas" name="languages" size="4" multiple="multiple" required="required" >
+              <option value="portugues">Portuguẽs</option>
+              <option value="english">Inglés</option>
+              <option value="french">Francés</option>
+              <option value="german">Alemán</option>
+            </select>
+            <label for="idiomas" class="propiedad">Idiomas</label>
+          </li>
+          <!-- Botonera -->
+          <li class="fila botonera">
+            <button type="submit">Aceptar</button>
+            <button type="reset">Reiniciar</button>   
+          </li>
+        </ul>
+      </form>
+    </div>
+
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
