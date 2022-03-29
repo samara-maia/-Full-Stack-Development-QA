@@ -196,40 +196,40 @@ html {
     border-radius: 6px;
   }
   
-  
-  
-  @media screen and (max-width: 600px) {
+  @media  (max-width: 600px) {
     .timeline::after {
-      left: 33px;
-    }
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-      font-size: 22px;
-    }
-    
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-    
+        left: 33px;
+      }
+
+      .container {
+        width: 10%;
+        padding-left: 30px;
+        padding-right: 15px;
+        font-size: 20px;
+      }
+
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
     .left::after,
     .right::after {
       left: 15px;
     }
-    
+
     .right {
-      left: 0%;
-    }
- }
-  
-  #timeline-caption {
-    color: #0B0719;
-    font-size: 16px;
-    text-align: left;
-    margin-left: 165px;
+        left: 0%;
+      }
+
+      #timeline-caption {
+        color: #0B0719;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 165px;
+      }
   }
   
+ 
