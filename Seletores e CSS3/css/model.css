@@ -196,40 +196,25 @@ html {
     border-radius: 6px;
   }
   
-  @media  (max-width: 600px) {
-    .timeline::after {
-        left: 33px;
-      }
-
-      .container {
-        width: 10%;
-        padding-left: 30px;
-        padding-right: 15px;
-        font-size: 20px;
-      }
-
-      .container::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-      }
-
-    .left::after,
-    .right::after {
-      left: 15px;
+  @media  (max-width: 600px){
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-
-    .right {
-        left: 0%;
-      }
-
-      #timeline-caption {
-        color: #0B0719;
-        font-size: 16px;
-        text-align: left;
-        margin-left: 165px;
-      }
+    .text-biograph{
+      width: 90%;
+      height: 310px;
+      margin-top: 16px;
+      padding-top: 15px;
+      padding-left: 20px;
+      padding-right: 25px;
+ }
+    .card-dbz-chars-align{
+      flex-wrap: nowrap;
+      display: flex;
+      flex-direction: column;
+    }
   }
+
   
- 
