@@ -13,22 +13,29 @@ pizzaJson.map((item, index)=>{
     pizzaItem.querySelector('a').addEventListener('click', (e)=>{
         e.preventDefault();
         let key = e.target.closest('.pizza-item').getAttribute('data-key');
+        modalQt = 1
         //evendo de click
+
         c('.pizzaBig img').src = pizzaJson[key].img;
         c('.pizzaInfo h1').innerHTML = pizzaJson[key].name;
         c('.pizzaInfo--desc').innerHTML = pizzaJson[key].description;
         c('.pizzaInfo--actualPrice').innerHTML = `R$ ${pizzaJson[key].price.toFixed(2)}`
+        c('.pizzaInfo--size.selected').classlList.remove('selected');
         cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{
+            if(sizeIndex == 2){
+                size.classlList.add('selected');
+            }
 
             size.querySelector('span').innerHTML = pizzaJson[key].sizes[sizeIndex];
-        })
+        });
+
+        c('.pizzaInfo--qt').innerHTML = modalQt;
 
         c('.pizzaWindowArea').style.opacity = 0;
         c('.pizzaWindowArea').style.display = 'flex';
         setTimeout(()=>{
             c('.pizzaWindowArea').style.opacity = 1;
-        }, 200);
-    
+        }, 200);    
     });
     
 
@@ -42,6 +49,26 @@ function closeModal (){
     c('.pizzaWindowArea').style.display = 'none'
     },500 );
 }
+
 cs('.pizzaInfo--cancelButton, pizzaInfo--cancelMobileButton').forEach((item)=>{
     item.addEventListener('click', closeModal)
+});
+
+//ação dos botões.
+
+c('.pizzaInfo--qtmenos').addEventListener('click', ()=>{
+    if(modalQt > 1){
+    modalQt--;
+    c('.pizzaInfo--qt').innerHTML = modalQt;
+   } 
+})
+c('.pizzaInfo--qtmais').addEventListener('click', ()=>{
+    modalQt++;
+    c('.pizzaInfo--qt').innerHTML = modalQt;
+});
+cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{
+    size.addEventListener('click', (e)=>{
+        c('.pizzaInfo--size.selected').classlList.remove('selected');
+        size.classlList.add('selected');
+    });
 });
