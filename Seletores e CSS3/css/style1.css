@@ -2,19 +2,23 @@ input, a {
     display: block;
 }
 
-/*selecionando o atributo*/
+/*selecionando aparti do  atributo e não do elemento */
 
 [required]{
     background-color: aqua;
 
 } 
 
-/* OU */
-input[name="usuario"]{ /*o usuario fica entre aspas pois é um valor não padrão*/
+/* OU combinações */
+input[type=text]{ /* para seleciona todos os tipos de type, poese o sinal de = */
+    background-color: aliceblue;
+}
+input[name="usuario"]{ /*o usuario fica entre "aspas" pois é um valor não padrão
+    ex. no caso type text é um tipo expecifico d input e não precisa de ""k*/
     background-color: aliceblue;
 }
 
-a[href^="https:"]{ /* */
+a[href^="https:"]{ /* o sinal mais qualquer palavra que não tenha em outros links */
     background-color: aliceblue;
 }
 a[href*="economia"]{ /*com o sibolo antes do sinbolo do  = procura exatamento a palavra economia */
@@ -23,7 +27,7 @@ a[href*="economia"]{ /*com o sibolo antes do sinbolo do  = procura exatamento a 
 a[href*="futebol"]{ /* */
     background-color: aquamarine;
 }
-a[href=""]{ /* */
-
+a[href~="https"]{ /* */
+ background-color: aliceblue;
 }
   
