@@ -1,0 +1,10 @@
+p::first-letter { /* tratando do conteúdo de um elemento
+                        e não do proprio  */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p::first-line{
+    background-color: chartreuse;
+}
+
