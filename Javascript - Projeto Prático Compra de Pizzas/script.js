@@ -1,5 +1,10 @@
+let cart = [];
+let modalQt = 1;
+let modalKey = 0;
+
 const c = (el)=>document.querySelector(el);
 const cs = (el)=>document.querySelectorAll(el);
+
 //Listagem das pizzas
 pizzaJson.map((item, index)=>{
     let pizzaItem = c('.models .pizza-item').cloneNode(true);
@@ -10,11 +15,12 @@ pizzaJson.map((item, index)=>{
     pizzaItem.querySelector('.pizza-item--price').innerHTML = `R$ ${item.price.toFixed(2)}`;
     pizzaItem.querySelector('.pizza-item--desc').innerHTML = item.description;
     pizzaItem.querySelector('.pizza-item--name').innerHTML = item.name;
+    //evendo de click
     pizzaItem.querySelector('a').addEventListener('click', (e)=>{
         e.preventDefault();
         let key = e.target.closest('.pizza-item').getAttribute('data-key');
         modalQt = 1
-        //evendo de click
+        modalKey = key
 
         c('.pizzaBig img').src = pizzaJson[key].img;
         c('.pizzaInfo h1').innerHTML = pizzaJson[key].name;
@@ -46,11 +52,11 @@ pizzaJson.map((item, index)=>{
 function closeModal (){
     c('.pizzaWindowArea').style.opacity = 0;
     setTimeout(()=>{
-    c('.pizzaWindowArea').style.display = 'none'
+    c('.pizzaWindowArea').style.display = 'none';
     },500 );
 }
 
-cs('.pizzaInfo--cancelButton, pizzaInfo--cancelMobileButton').forEach((item)=>{
+cs('.pizzaInfo--cancelButton, .pizzaInfo--cancelMobileButton').forEach((item)=>{
     item.addEventListener('click', closeModal)
 });
 
@@ -72,3 +78,9 @@ cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{
         size.classlList.add('selected');
     });
 });
+c('.pizzaInfo--addButton').addEventListener('click',()=>{
+    // Qual a pizza?
+    console.log("Pizza: "+modalKey)
+    // Qual o tamanho?
+    // Quantas pizzas ?
+})
