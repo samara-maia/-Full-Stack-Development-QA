@@ -1,0 +1,16 @@
+div{
+    background-color: #f00;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    transform: skew();/* seve para distorce */
+
+   /* transform: rotate(0deg); /*seve para rotacionar*/
+    /*
+    transform:scale(0.1) ;pode tranframa objetos em 3D
+    trambém usado em galeria de fotos e jogos
+    
+    */
+}
