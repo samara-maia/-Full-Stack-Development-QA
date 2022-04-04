@@ -26,10 +26,10 @@ pizzaJson.map((item, index)=>{
         c('.pizzaInfo h1').innerHTML = pizzaJson[key].name;
         c('.pizzaInfo--desc').innerHTML = pizzaJson[key].description;
         c('.pizzaInfo--actualPrice').innerHTML = `R$ ${pizzaJson[key].price.toFixed(2)}`
-        c('.pizzaInfo--size.selected').classlList.remove('selected');
+        c('.pizzaInfo--size.selected').classList.remove('selected');
         cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{
             if(sizeIndex == 2){
-                size.classlList.add('selected');
+                size.classList.add('selected');
             }
 
             size.querySelector('span').innerHTML = pizzaJson[key].sizes[sizeIndex];
