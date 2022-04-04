@@ -1,0 +1,5 @@
+/* seletor egativo*/
+
+body :not(p) {
+    background-color: brown;
+}
