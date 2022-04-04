@@ -1,0 +1,10 @@
+
+div:nth-child(2){
+    background-color: brown
+}
+
+/*para selecionar o segundo de baixo para cima */
+
+div:nth-last-child(3) {
+    background-color: yellowgreen;
+}
