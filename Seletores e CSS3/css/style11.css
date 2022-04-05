@@ -1,0 +1,7 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    box-sizing: content-box;/*tamanho do box vai ser correspondento ao tamanho do conteído
+    border-box = o conteudo tbm inclue o borde e pedding d elemento*/
+}
