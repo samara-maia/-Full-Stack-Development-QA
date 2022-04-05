@@ -1,0 +1,25 @@
+input {
+    width: 400px;
+    height: 50px;
+    font-size: 27px;
+    color: #ff0000;
+}
+
+.input::-webkit-input-placeholder{
+    color: #00Ff00;/*webkit, Blink, Edge*/
+}
+.input:-moz-placeholder{
+    color: #00Ff00;/*Firefox 4 ao 18*/
+}
+.input::-moz-placeholder{
+    color: #00Ff00;/*Firefx 19+ */
+}
+.input:-ms-input-placeholder{
+    color: #00Ff00;/* IE 10 e 11*/
+}
+.input::-ms-input-placeholder {
+    color: #00Ff00;/* Microsft Edge*/
+}
+.input::placeholder{
+    color: #00Ff00;/* todos os navegadores modernos*/
+}
