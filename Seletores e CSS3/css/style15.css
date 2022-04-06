@@ -1,0 +1,26 @@
+.aviso {
+    width: 220px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    box-sizing:content-box;
+    overflow: hidden;
+}
+
+.selo {
+    font-family: sans-serif;
+    background-color: green;
+    color:white;
+    text-align:center;
+    width:200px;
+    font-weight: 200;
+    font-size:21px;
+    line-height:100px;
+    transform:scale(3);
+    position: relative; 
+    top: 35px;
+    left: 20px;
+    height: 50px;
+    
+    
+}  
