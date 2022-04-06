@@ -1,0 +1,18 @@
+body{
+    position: absolute;
+    display: block;
+    margin-left: 390px;
+}
+
+table{
+    border: 2px solid gray;
+    text-align: center;
+}
+
+thead tr th {
+    background-color: gray;
+}
+
+tbody tr:nth-child(odd){
+    background-color: green;
+}
