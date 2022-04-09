@@ -1,0 +1,24 @@
+.aviso {
+    width: 470px;
+    height: 100px;
+    margin: 0;
+    margin-left: -115px;
+    margin-top: 5%;
+    border: 3px solid white;
+    background-color: blue;
+    overflow: hidden;
+    transform:rotate(-45deg);
+}
+
+.selo{
+    font-family: sans-serif;
+    color:white;
+    text-decoration: none; 
+    font-size:25px;
+    padding-right: 35px;
+    padding-left: 110px;
+}
+
+
+
+

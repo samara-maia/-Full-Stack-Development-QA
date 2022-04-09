@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 30px;
+}
+
+.botao{
+    text-decoration: none;
+    color: #eee;
+    display: inline-block;
+    background-color: #3f8bbe;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.botao:hover {
+    background-color: #3f8bbe (#3f8bbe, 5%);
+}
+
+.botao:focus{
+    background-color: #3f8bbe (#3f8bbe, 15%);
+}
