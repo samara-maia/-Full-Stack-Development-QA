@@ -61,6 +61,19 @@ header{
     color: #ccc;
 }
 
+.button {
+    display:inline-block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
 .banner {
     height:calc(100vh - 100px);/*descontando o valor com o header*/
     background-color: #333;
@@ -102,18 +115,6 @@ header{
     text-transform: uppercase;
     margin-top: 20px;
 }
-.banner a {
-    display: block;
-    background-color: #b28756;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-}
 
 .banner .sliders-pointers{
     width: 100vw;
@@ -152,15 +153,50 @@ header{
     font-size: 20px;
 }
 
-.default .section-desc{
+.default .section-desc {
     font-size: 12px;
     color: #ccc;
     margin-top: 10px;
     margin-bottom: 40px;
 }
-.default .section-boby {
-    max-width: 1140px;
+.default .section-body {
+    max-width:1140px;
     margin:auto;
-    min-height:100px;
-    background-color: rgba(204, 204, 204, 0.822);
+    
+}
+.default.light{
+    background-color: #f7f7f7;
+}
+.default.light .section-title,
+.default.light .section-body {
+    color: #000;
+}
+
+.default.dark{
+    background-color: #000;
+}
+.default.dark .section-title,
+.default.dark .section-body {
+    color: #fff;
+}
+
+/* css áreas especificas */
+
+.section-aboutus{
+    display: flex;
+}
+.section-aboutus--left {
+    flex: 1;
+}
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height:25px;
+}
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow:0px 5px 10px #333;
 }
