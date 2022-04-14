@@ -466,10 +466,47 @@ header{
 }
 
 .section-firm {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.section-firm--area{
+    display: flex;
+    align-items: center;
+}
+.section-company{
     flex: 1;
+    text-align: center;
 }
 
-.section-firm img {
-    margin: 10px;
-    padding: 30px;
+.section-Prince {
+    display: flex;
+}
+
+.section-prince--item {
+    flex: 1;
+    background-color: #fff;
+    margin-right: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.section-prince--item:last-child{
+    margin-right: 0;
+}
+.section-prince--item-name {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+}
+.section-prince--item-money{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.section-prince--item-period {
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section-prince--item-point {
+    font-size: 12px;
 }
