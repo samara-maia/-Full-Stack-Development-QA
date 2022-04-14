@@ -376,7 +376,7 @@ header{
     font-size: 17px;
     margin-top: 30px;
 }
-.section-team-role {
+.section-team--role {
     font-size: 14px;
     color: #999;
     margin-top: 5px;
@@ -398,5 +398,65 @@ header{
 }
 
 .section-team--social a:hover {
+    background-color: #b28756;
+}
+
+
+.section-happy {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-happy--avatar{
+    width: 150px;
+    height: auto;
+    
+}
+
+.section-happy--name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.section-happy--role {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.section-happy--brief img {
+    position: relative;
+    left: 300px;
+    margin: 30px;  
+} 
+.section-happy--brief p {
+    display:contents;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-happy--pointers {
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-happy--pointers .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-happy--pointers .pointer.active {
     background-color: #b28756;
 }
