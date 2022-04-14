@@ -401,6 +401,9 @@ header{
     background-color: #b28756;
 }
 
+.Happy {
+    background-color: #ccc;
+}
 
 .section-happy {
     display: flex;
@@ -435,7 +438,8 @@ header{
     margin: 30px;  
 } 
 .section-happy--brief p {
-    display:contents;
+    display:flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
 }
@@ -459,4 +463,13 @@ header{
 }
 .section-happy--pointers .pointer.active {
     background-color: #b28756;
+}
+
+.section-firm {
+    flex: 1;
+}
+
+.section-firm img {
+    margin: 10px;
+    padding: 30px;
 }
