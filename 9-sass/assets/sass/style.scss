@@ -1,5 +1,13 @@
+$cor-fondo:#eeeeee;
+$cor-fonte:#333;
+$borda-padrão:2px;
 
-h1{
-    font-size: 20px;
-    font-weight: bold;
+body {
+    background-color: $cor-fondo;
+    color: $cor-fonte;
+}
+.quadrado {
+    width: 200px;
+    height: 200px;
+    border: $borda-padrão solid #000;
 }
