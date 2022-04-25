@@ -24,4 +24,27 @@ nav li a {
   color: #000;
 }
 
+.msg-info, .msg-aviso, .msg-sucesso {
+  padding: 10px;
+  font-size: 24px;
+  border: 2px solid #ccc;
+  margin: auto;
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+.msg-info {
+  border-color: #0000ff;
+}
+
+.msg-aviso {
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+.msg-sucesso {
+  border-color: #00ff00;
+  color: #00ff00;
+}
+
 /*# sourceMappingURL=style.css.map */
