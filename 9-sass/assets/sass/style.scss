@@ -1,13 +1,21 @@
-$cor-fondo:#eeeeee;
-$cor-fonte:#333;
-$borda-padrão:2px;
+nav{
+    background-color: #eee;
+    height: 100px;
 
-body {
-    background-color: $cor-fondo;
-    color: $cor-fonte;
-}
-.quadrado {
-    width: 200px;
-    height: 200px;
-    border: $borda-padrão solid #000;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        a {
+            display:block;
+            background-color: #ccc;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
 }
