@@ -15,9 +15,6 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  transform: 90deg;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
 }
 nav li a {
   display: block;
@@ -25,6 +22,16 @@ nav li a {
   padding: 10px;
   text-decoration: none;
   color: #000;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10 {
+  font-size: 14px;
+  border: 1px solid #3333;
+  padding: 5px;
+}
+
+.item-1, .item-2, .item-3 {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.1.css.map */
