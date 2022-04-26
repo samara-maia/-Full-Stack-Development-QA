@@ -1,0 +1,28 @@
+@import 'reset';
+@mixin girar($graus) {
+    transform: ($graus);
+    -webkit-transform:rotate($graus);
+    -ms-transform:rotate($graus);
+}
+nav{
+    background-color: #eee;
+    height: 100px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        @include girar(90deg);
+        a {
+            display:block;
+            background-color: #ccc;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+}
