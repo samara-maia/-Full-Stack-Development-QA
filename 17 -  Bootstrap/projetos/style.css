@@ -7,3 +7,6 @@ body {
 .container {
   padding: 60px 15px 0;
 }
+li {
+  padding: 5px;
+}
