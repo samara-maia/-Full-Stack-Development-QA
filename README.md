@@ -7,10 +7,12 @@
     com meu nome já esta funcionando normalmente.
     até o retorno do meu que está em manutenção.
 
-    esses links também fazem parte do projetos.
+    Esses links também fazem parte do projetos.
+ 
+   -https://github.com/samara-maia/compra-de-pizza.git
    
-   [GitHub Pages]
-   (https://github.com/samara-maia/compra-de-pizza.git)
-   (https://github.com/samara-maia/webpackv.git)
-   (https://github.com/samara-maia/Starbucks.git)
-   (https://github.com/samara-maia/AWAX.git)
+   -https://github.com/samara-maia/webpackv.git
+   
+   -https://github.com/samara-maia/Starbucks.git
+   
+   -https://github.com/samara-maia/AWAX.git
