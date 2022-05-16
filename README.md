@@ -8,18 +8,9 @@
     até o retorno do meu que está em manutenção.
 
     esses links também fazem parte do projetos.
-    
- <div>
-    <a href="https://github.com/samara-maia/compra-de-pizza.git" target="_blank"></a>
-</div>
-
-<div>
-    <a href="https://github.com/samara-maia/webpackv.git" target="_blank"></a>
-</div>
-<div>
-    <a href="https://github.com/samara-maia/Starbucks.git" target="_blank"></a>
-</div>
-
-<div>
-<a href="https://github.com/samara-maia/AWAX.git" target="_blank"></a>
-</div>
+   
+   [GitHub Pages]
+   (https://github.com/samara-maia/compra-de-pizza.git)
+   (https://github.com/samara-maia/webpackv.git)
+   (https://github.com/samara-maia/Starbucks.git)
+   (https://github.com/samara-maia/AWAX.git)
