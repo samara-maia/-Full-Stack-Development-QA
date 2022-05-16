@@ -3,7 +3,9 @@ body {
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
-
+.card-img-overlay {
+  margin: 70px;
+}
 .container {
   padding: 60px 15px 0;
 }
