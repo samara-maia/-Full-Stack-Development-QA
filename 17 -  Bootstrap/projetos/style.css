@@ -7,8 +7,12 @@ body {
   margin: 70px;
 }
 .container {
-  padding: 60px 15px 0;
+  padding: 55px 15px 0;
 }
 li {
   padding: 5px;
+}
+.card-group {
+  left: 45rem;
+  width: 100%;
 }
