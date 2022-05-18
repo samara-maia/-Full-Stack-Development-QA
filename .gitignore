@@ -2,5 +2,3 @@
 .sass-cache/
 *.map
 *.txt
-.vscode
-*node_modules/*
