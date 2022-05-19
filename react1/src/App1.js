@@ -1,8 +1,10 @@
 import React from 'react'
+import './App.css'
 
 function Avatar(props) {
+  // pode ser colocado o stylesheet na div
   return (
-    <div>
+    <div className="avatar">
       <img src={props.user.url} alt={props.user.name} />
       <br />
       <span>{props.user.name}</span>
