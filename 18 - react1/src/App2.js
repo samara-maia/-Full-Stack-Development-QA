@@ -10,15 +10,22 @@ const Site = styled.div`
 const Botao = styled.button`
   font-size: 19px;
   padding: 10px 15px;
-  background-color: ${props => (props.ativo === true ? '#0000FF' : '#CCC')};
-  color: ${props => (props.ativo === true ? '#FFF' : '#000')};
+  border: 3px solid #ff0000;
+  color: #ff0000;
+  border-color: #fff;
+  margin: 5px;
+  border-radius: 5px;
+`
+const BotaoPequeno = styled(Botao)`
+  padding: 5px 10px;
+  font-size: 16px;
 `
 
 function App() {
   return (
     <Site>
       <Botao ativo={true}>Clique aqui</Botao>
-      <Botao ativo={false}>Clique aqui</Botao>
+      <BotaoPequeno ativo={false}>Clique aqui</BotaoPequeno>
     </Site>
 
     /*<Site>
