@@ -10,19 +10,18 @@ const Input = styled.input`
 `
 function App() {
   const [email, setEmail] = useState('')
+  const [isLogged, setIsLogged] = useState(false)
 
   return (
     <>
       <Input
         placeholder="Digite um e-mail"
         type="email"
-        valeu={email}
-        onChange={handleEmailInput}
+        value={email}
+        onChange={e => setEmail(e.target.value)}
       />
 
-      {algo && <Componente />}
-
-      {email.length > 0 && <p>{(email.length = 1 ? '' : 's')}</p>}
+      {isLogged ? <button>Sair</button> : <button>Fazer Login</button>}
     </>
   )
 }
