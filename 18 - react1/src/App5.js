@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
+//import styled from 'styled-components'
 
 function App() {
   const [contagem, setContagem] = useState(0)
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <h1>Contagem: {contagem}</h1>
-      <button onclick={aumentarAction}>Aumentar Número</button>
+      <button onClick={aumentarAction}>Aumentar Número</button>
     </>
   )
 }

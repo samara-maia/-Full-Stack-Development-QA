@@ -10,7 +10,7 @@ const Input = styled.input`
 `
 function App() {
   const [email, setEmail] = useState('')
-  const [isLogged, setIsLogged] = useState(false)
+  const [isLogged] = useState(false)
 
   return (
     <>
