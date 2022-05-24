@@ -16,7 +16,7 @@ function SearchBox(props) {
     if (props.onChangeText) {
       props.onChangeText(texto)
     }
-  }, [texto])
+  }, [props, texto])
   /*
   function inputTextChange(e) {
     setTexto(e.target.value)
