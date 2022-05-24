@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react'
 import SearchBox from './components/SearchBox'
 
 function App() {
+  
+  // eslint-disable-next-line no-unused-vars
   const [searchText, setSearchText] = useState('')
   const [list, setList] = useState([])
 
