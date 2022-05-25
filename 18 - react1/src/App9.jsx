@@ -11,9 +11,9 @@ function App() {
   // eslint-disable-next-line no-unused-expressions
   useEffect(() => {
     setList([
-      { title: 'Comprar o bolo', done: false },
-      { title: 'Pegar o cachorro no Pet', done: true },
-      { title: 'Comprar o bolo', done: false }
+      { title: 'Fazer suas vontades', done: false },
+      { title: 'Se mimar', done: true },
+      { title: 'Confiar em você', done: false }
     ])
   }, [])
    
@@ -34,9 +34,9 @@ function App() {
  
   return (
     <>
-      <h1>Lista de Tarefas</h1>
+      <h1>Aprenda a:</h1>
       <SearchBox
-        frasePadrao="Adcione um item."
+        frasePadrao="Adcione o que precisa."
         onEnter={addAction}
       />
       <hr />
