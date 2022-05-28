@@ -27,6 +27,9 @@ function App(){
           <li>
             <Link to="/categoria?tipo=viagem">Viagem</Link>
           </li>
+          <li>
+            <Link to="/aprendendo">URL não existe</Link>
+          </li>
           
         </ul>
       </nav>
@@ -44,6 +47,10 @@ function App(){
 
       <Route path="/categoria">
         <Categoria/>
+      </Route>
+
+      <Route path="*">
+          <h4>Págna não encontrada</h4>
       </Route>
     </Switch>
 
