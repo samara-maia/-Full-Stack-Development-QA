@@ -4,7 +4,15 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Sobre from "./pages/Sobre";
 
-const isLogged = true
+const isLogged = false
+
+const PrivateRoute = ({ children, ...rest }) => {
+  return(
+    <Route {...rest}>
+      { isLogged ? children : <Redirect to="/login" />}
+    </Route>
+  )
+}
 
 export function App13(){
 
@@ -36,9 +44,9 @@ export function App13(){
        <Login/>
      </Route>
 
-     <Route path="/sobre">
-       {isLogged ? <Sobre/> : <Redirect to="/login"/>}
-     </Route>
+     <PrivateRoute path="/sobre">
+       <Sobre />
+     </PrivateRoute>
 
      <Route path="*">
        <h4>Págna não encontrada</h4>
