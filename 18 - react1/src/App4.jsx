@@ -8,7 +8,7 @@ const Input = styled.input`
   padding: 10px;
   border: 1px solid #000;
 `
-function App() {
+export function App4() {
   const [email, setEmail] = useState('')
   const [isLogged] = useState(false)
 
@@ -26,4 +26,4 @@ function App() {
   )
 }
 
-export default App
+  

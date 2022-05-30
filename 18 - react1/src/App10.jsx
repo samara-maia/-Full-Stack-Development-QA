@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-function App(){
+export function App10(){
 
   const [name, setName] = useState(localStorage.getItem('name'))
 
@@ -15,4 +15,3 @@ function App(){
   )
 }
 
-export default App 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Modal from './components/Modal'
 
-function App() {
+export function App11() {
   const [modalVisible, setModalVisible] = useState(false)
 
   const handleButtonClick = () => {
@@ -17,4 +17,4 @@ function App() {
   )
 }
 
-export default App
+

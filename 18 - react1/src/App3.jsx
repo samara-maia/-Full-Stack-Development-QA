@@ -9,7 +9,7 @@ const Input = styled.input`
   border: 1px solid #000;
 `
 
-function App() {
+export function App3() {
   const [texto, setTexto] = useState('')
   const handleInput = e => {
     setTexto(e.target.value)
@@ -23,4 +23,4 @@ function App() {
   )
 }
 
-export default App
+ 

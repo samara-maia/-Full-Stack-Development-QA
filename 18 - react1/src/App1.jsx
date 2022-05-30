@@ -11,7 +11,7 @@ function Avatar(props) {
     </div>
   )
 }
-function App() {
+export function App1() {
   let user = {
     url: 'https://www.google.com.br/google.jpg',
     name: 'Samara Maia'
@@ -23,4 +23,4 @@ function App() {
   )
 }
 
-export default App
+

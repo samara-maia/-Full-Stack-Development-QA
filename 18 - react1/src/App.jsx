@@ -9,7 +9,7 @@ function formatarNome(usuario) {
   return usuario.nome + '' + usuario.sobrenome
 }
 
-function App() {
+export function App() {
   let usuario = {
     nome: 'Samara',
     sobrenome: 'Maia'
@@ -28,4 +28,3 @@ let App = () => {
 /*
 let App = () => <h1>Testando 10, 11, 12</h1>
 */
-export default App

@@ -5,7 +5,7 @@ import Sobre from "./pages/Sobre";
 import Categoria from './pages/Categoria'
 
 
-function App(){
+export function App12(){
   return(
     <BrowserRouter>
     <header>
@@ -68,5 +68,3 @@ function App(){
     </BrowserRouter>
     )
 }
-
-export default App

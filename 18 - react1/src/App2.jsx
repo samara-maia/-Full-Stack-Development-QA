@@ -21,7 +21,7 @@ const BotaoPequeno = styled(Botao)`
   font-size: 16px;
 `
 
-function App() {
+export function App2() {
   return (
     <Site>
       <Botao ativo={true}>Clique aqui</Botao>
@@ -35,4 +35,4 @@ function App() {
   )
 }
 
-export default App
+

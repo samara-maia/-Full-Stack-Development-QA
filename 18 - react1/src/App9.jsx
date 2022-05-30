@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 //import styled from 'styled-components'
 import SearchBox from './components/SearchBox'
-
-function App() {
+ 
+export function App9() {
   
   // eslint-disable-next-line no-unused-vars
   const [searchText, setSearchText] = useState('')
@@ -53,4 +53,3 @@ function App() {
   )
 }
 
-export default App

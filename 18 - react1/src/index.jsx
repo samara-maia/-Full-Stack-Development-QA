@@ -1,13 +1,5 @@
-import React from 'react'
+import * as React from 'react'
+import { render } from 'react-dom'
+import { App4 } from './App4'
 
-// 👇️ For client createRoot or hydrateRoot
-import * as ReactDOMClient from 'react-dom/client';
-//import ReactDOM from 'react-dom'
-import App from './App12'
-
-const root = ReactDOMClient.createRoot(document.getElementById('root'))
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+render(<App4/>,document.getElementById('root'))

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 //import styled from 'styled-components'
 
-function App() {
+export function App5() {
   const [contagem, setContagem] = useState(0)
 
   useEffect(() => {
@@ -20,4 +20,4 @@ function App() {
   )
 }
 
-export default App
+

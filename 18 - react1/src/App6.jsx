@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 //import styled from 'styled-components'
 import SearchBox from './components/SearchBox'
 
-function App() {
+export function App6() {
   const [searchText, setSearchText] = useState('')
 
   function handleSearchInput(novoTexto) {
@@ -27,4 +27,3 @@ function App() {
       <SearchBox />
 */
 
-export default App
