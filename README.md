@@ -1,7 +1,9 @@
 # {Parças}-Full-Stack-Development-QA
 
 
-    Aulas da automação Expert | Full Stack da instituição {Parças} Esses links também fazem parte do projetos. 
+    Aulas da automação Expert | Full Stack da instituição {Parças} 
+    
+    Esses links também fazem parte do projetos. 
 
 - [Compra de Pizza](https://github.com/samara-maia/compra-de-pizza.git) 
   
