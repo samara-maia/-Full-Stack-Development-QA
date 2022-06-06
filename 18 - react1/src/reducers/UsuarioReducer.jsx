@@ -1,5 +1,6 @@
 const initialState = {
-  name: ''
+  name: 'Visitante',
+  contador: 0
 }
 const UsuarioReducer = (state = initialState, action) => {
 

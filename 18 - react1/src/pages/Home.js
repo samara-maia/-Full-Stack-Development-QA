@@ -1,7 +1,8 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-function Home() {
+function Home(props) {
   let history = useHistory()
   const handleButton = () => {
     setTimeout(() => {
@@ -12,9 +13,18 @@ function Home() {
   return (
     <div>
       <h4>Página Home</h4>
+      NOME: {props.name}
+      <br />
+      <br />
       <button onClick={handleButton}>Ir para a Página Sobre</button>
     </div>
   )
 }
 
-export default Home
+const mapStateToProps = state => {
+  return {
+    name: state.usuario.name
+  }
+}
+
+export default connect(mapStateToProps)(Home)
