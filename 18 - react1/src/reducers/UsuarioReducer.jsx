@@ -12,6 +12,11 @@ const UsuarioReducer = (state = initialState, action) => {
     return  {...state, name: action.payload.name}
     // eslint-disable-next-line no-unreachable
     break;
+    case 'INCREMENT_CONTADOR':
+      let newCount = state.contador +1
+      return {...state, contador:newCount}
+
+    
   }
 
   return state
