@@ -1,8 +1,8 @@
 import React from "react";
-import{ BrowserRouter, Switch, Route, Link, Redirect} from 'react-router-dom'
+import{ BrowserRouter, Switch, Route, Link, Redirect} from 'react-router-dom';
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
-import Categoria from './pages/Categoria'
+import Categoria from './pages/Categoria';
 
 
 export function App12(){
