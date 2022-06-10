@@ -4,8 +4,10 @@
     
     Esses links também fazem parte do projetos. 
 
-    O modulo 19 - ReactJS Introdução e Criação do Projeto e
-    O modulo 20 - ReactJS Conceitos Básicos do React
+    O modulo 19 - ReactJS Introdução e Criação do Projeto,
+    O modulo 20 - ReactJS Conceitos Básicos do React e
+    O modulo 21 - ReactJS Estado Global, Context, Requisição
+    
     estão na mesma pasta 18 - react1 .
 
 
