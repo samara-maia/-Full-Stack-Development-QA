@@ -1,0 +1,21 @@
+body {
+  background-color: aliceblue;
+}
+
+input[type='text'] {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.azul {
+  background-color: blue;
+  color: aliceblue;
+}
+.vermelho {
+  background-color: brown;
+  color: aliceblue;
+}
+.verde {
+  background-color: green;
+  color: black;
+}
